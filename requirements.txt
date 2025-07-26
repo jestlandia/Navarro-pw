@@ -1,2 +1,5 @@
 rich==14.0.0
 requests==2.32.3
+pytesseract
+pillow
+playwright
