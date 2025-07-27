@@ -1,7 +1,6 @@
 # Navarro-PW: OSINT Username Checker
 
-
-<p align='center'><img src='commissairenavarro.png' alt='commissaire-navarro'></p>
+<p align='center'><img src='https://github.com/user-attachments/assets/ed5f2eef-a9cc-44cd-8745-59363d722417' alt='Navarro_VieDeMaMere' width='60%'></p>
 
 A Python tool that checks for the existence of a username across 20+ social media and web platforms using Playwright (forked from [Navarro](https://github.com/noobosaurus-r3x/Navarro) by [noobosaurus-r3x](https://github.com/noobosaurus-r3x)).
 
@@ -163,9 +162,6 @@ Rate limit data is stored in `~/.navarro_rate_limits.pkl`
 - Rate limiting may slow down large batch checks
 - No proxy support currently implemented
 - Single-threaded to avoid overwhelming target platforms
-
-![Navarro_VieDeMaMere](https://github.com/user-attachments/assets/ed5f2eef-a9cc-44cd-8745-59363d722417)
-
 
 ## Privacy & Legal
 
