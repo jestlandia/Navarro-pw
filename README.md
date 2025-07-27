@@ -1,8 +1,15 @@
-# Navarro - OSINT Username Checker
-A Python tool that checks for the existence of a username across 20+ social media and web platforms.
+# Navarro-PW: OSINT Username Checker
 
-![Navarro_banner1](https://github.com/user-attachments/assets/cc92bce3-a288-4ebc-b625-263210e74cc5)
 
+<p align='center'><img src='commissairenavarro.png' alt='commissaire-navarro'></p>
+
+A Python tool that checks for the existence of a username across 20+ social media and web platforms using Playwright (forked from [Navarro](https://github.com/noobosaurus-r3x/Navarro) by [noobosaurus-r3x](https://github.com/noobosaurus-r3x)).
+
+## What's New? 
+
+- Screenshot capture and OCR to overcome limitations with Twitch and Discord.
+
+---
 
 ## Features
 
@@ -18,7 +25,10 @@ A Python tool that checks for the existence of a username across 20+ social medi
 
 - Python 3.6+
 - `requests`
-- `rich` (optional, for better terminal output)
+- `rich` 
+- `playwright`
+- `pytesseract`
+- `Pillow`
 
 or 
 
@@ -31,11 +41,12 @@ pip install -r requirements.txt
 
 ```bash
 # Clone the repository
-git clone https://github.com/noobosaurus-r3x/Navarro.git
-cd Navarro
+git clone https://github.com/jestlandia/Navarro-pw.git
+cd Navarro-pw
 
 # Install dependencies
-pip install requests rich
+brew install tesseract tesseract-lang
+pip install requests rich Pillow pytesseract
 ```
 
 ### Docker
@@ -48,22 +59,22 @@ docker run -it navarro <command>
 
 ### Check single username
 ```bash
-python3 navarro.py username
+python3 navarro_pw.py username
 ```
 
 ### Check multiple usernames from file
 ```bash
-python3 navarro.py --list usernames.txt
+python3 navarro_pw.py --list usernames.txt
 ```
 
 ### Export results to JSON
 ```bash
-python3 navarro.py username --export results.json
+python3 navarro_pw.py username --export results.json
 ```
 
 ### Combine options
 ```bash
-python3 navarro.py --list users.txt --export output.json
+python3 navarro_pw.py --list users.txt --export output.json
 ```
 
 ## Supported Platforms
@@ -94,8 +105,11 @@ python3 navarro.py --list users.txt --export output.json
 - Steam
 - DeviantArt
 - Vimeo
+- Twitch
+- Discord
+- RuTube
 
-**Note**: X/Twitter and Twitch are not supported due to lack of reliable detection methods.
+**Note**: X/Twitter is not supported due to lack of reliable detection methods.
 
 ## Output
 
